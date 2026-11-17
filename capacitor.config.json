@@ -1,0 +1,12 @@
+{
+  "appId": "com.mematiii.capecove",
+  "appName": "Cape Cove",
+  "webDir": "www",
+  "backgroundColor": "#11648f",
+  "ios": {
+    "contentInset": "never",
+    "scrollEnabled": false,
+    "backgroundColor": "#11648f",
+    "allowsLinkPreview": false
+  }
+}

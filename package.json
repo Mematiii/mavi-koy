@@ -1,0 +1,24 @@
+{
+  "name": "cape-cove",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cape Cove - cozy seaside merge game",
+  "scripts": {
+    "fonts": "node scripts/fonts.mjs",
+    "assets": "capacitor-assets generate --ios --iconBackgroundColor '#11648f' --splashBackgroundColor '#11648f'",
+    "sync": "cap sync ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/haptics": "^7.0.0",
+    "@capacitor/local-notifications": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/assets": "^3.0.5",
+    "@fontsource/fredoka": "^5.0.0",
+    "@fontsource/lilita-one": "^5.0.0",
+    "@fontsource/nunito": "^5.0.0"
+  }
+}
