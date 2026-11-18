@@ -603,6 +603,10 @@ img.ri{display:inline-block;width:1.35em;height:1.35em;vertical-align:-.35em}
 #loading .logo{transform:none}
 #loading .logoimg{width:min(92vw,400px);display:block;margin:0 auto}
 #loading .logo small{margin-top:2px!important}
+/* çentik / Dynamic Island: üst çubuk güvenli bölgeye kadar uzar, ekranlar onun altından başlar */
+#hud{padding-top:calc(8px + env(safe-area-inset-top,0px))!important}
+.screen{top:env(safe-area-inset-top,0px)!important}
+#toast{top:calc(76px + env(safe-area-inset-top,0px))}
 </style>
 
 <div id="app">
