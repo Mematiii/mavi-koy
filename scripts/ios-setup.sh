@@ -21,4 +21,7 @@ $PB -c "Delete :UISupportedInterfaceOrientations~ipad" $PLIST 2>/dev/null || tru
 $PB -c "Add :UIStatusBarHidden bool true" $PLIST 2>/dev/null || true
 $PB -c "Add :UIViewControllerBasedStatusBarAppearance bool false" $PLIST 2>/dev/null || $PB -c "Set :UIViewControllerBasedStatusBarAppearance false" $PLIST
 $PB -c "Add :GKGameCenterBadgingDisabled bool false" $PLIST 2>/dev/null || true
+# iOS 15 minimum (Apple requirement from April 2027)
+sed -i '' "s/platform :ios, '1[34].0'/platform :ios, '15.0'/" ios/App/Podfile
+sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 1[34].0;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' ios/App/App.xcodeproj/project.pbxproj
 echo "ios setup done"
